@@ -1,0 +1,291 @@
+
+//==========================Home: Shop Hero===========================
+
+.shop-hero-1 {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .shop-hero-1-content {
+
+
+
+        h2,
+        p,
+        span {
+            text-align: center;
+        }
+    }
+
+}
+
+
+.shop-hero-1-start {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-items: end;
+    padding: 1.5rem 3rem;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .shop-hero-1-content-start {
+
+
+
+        h2,
+        p {
+            text-align: start;
+        }
+    }
+
+}
+
+
+
+.shop-hero-2 {
+    height: 100vh;
+    width: auto;
+}
+
+//==========================Home: Shop Slider===========================
+
+
+
+//==========================Home: Product (Card)===========================
+
+
+/// ------Product Card Simple
+
+
+.product-four-simple {
+
+
+    img {
+        height: 500px;
+        weight: auto;
+    }
+}
+
+.product-card-body-simple {
+
+    padding: 1.5rem 2rem;
+
+    h6 {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-size: 20px;
+
+    }
+
+    p {}
+
+    i {
+        border: solid 1px black;
+        border-radius: 50%;
+    }
+
+
+}
+
+
+
+.shop-card-category-simple {
+
+    padding-bottom: 1rem;
+
+}
+
+.product-card-title-simple {
+
+
+    //
+}
+
+.product-card-price-simple {
+
+    color: var(-pico-primary);
+}
+
+
+//==========================Home: Product (Category)===========================
+
+// Categorie 1
+.shop-category-1-col {
+    height: 300px;
+    width: auto;
+    padding: 3rem;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+// Category 2
+
+.shop-category-2-col {
+    height: 500px;
+    width: auto;
+    padding: 3rem;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+//category 2 (FULL)
+
+
+
+.shop-category-2-col-full {
+    height: 800px;
+    width: auto;
+    padding: 3rem;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+//Category 3
+
+.shop-category-3 {
+
+    img {
+        height: 600px;
+        width: 100%;
+    }
+}
+
+
+
+
+//==========================Shop CTA===========================
+
+.shop-cta {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+//==========================Shop Wigets===========================
+
+
+
+.shop-widget-1-col {
+    height: 500px;
+    width: auto;
+    padding: 3rem;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+
+
+.shop-widget-2-col {
+
+    height: 420px;
+    width: auto;
+    padding: 3rem;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 2rem;
+
+    }
+
+
+}
+
+//==========================Home: Product (Carousel)===========================

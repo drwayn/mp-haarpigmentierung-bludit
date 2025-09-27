@@ -1,0 +1,130 @@
+@import "custom"; // Importiert die Variablen aus custom.scss
+@import "src/bootstrap/scss/bootstrap"; // Importiert Bootstrap
+
+/* ==========================================Bootstrap Überschreiben=================================================================================== */
+
+$primary: $primary-color;
+$secondary: #6c757d;
+$success: #28a745;
+$warning: #ffc107;
+$danger: #dc3545;
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$font-family-sans-serif: $font-primary;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Button (BS)
+$btn-border-radius: 0rem; // 0rem eckig / Bootstrap 0.25rem
+$btn-padding-y: 0.375rem;
+$btn-padding-x: 0.75rem;
+
+// Forms (BS)
+$input-bg: #ffffff;
+$input-border-color: #ced4da;
+$input-border-radius: 0rem; // 0rem eckig / Bootstrap 0.25rem
+$input-padding-y: 0.375rem;
+$input-padding-x: 0.75rem;
+
+// Navbar (BS)
+$navbar-dark-color: rgba(255, 255, 255, 0.75);
+$navbar-dark-hover-color: rgba(255, 255, 255, 1);
+$navbar-light-color: rgba(0, 0, 0, 0.75);
+$navbar-light-hover-color: rgba(0, 0, 0, 1);
+
+// Tabs (BS)
+$nav-tabs-border-color: #dee2e6;
+$nav-tabs-link-hover-border-color: #e9ecef;
+$nav-tabs-link-active-color: $primary-color; // Bootstrap #495057
+$nav-tabs-link-active-bg: #ffffff;
+$nav-tabs-link-active-border-color: #dee2e6;
+
+// Accordion (BS)
+$accordion-button-color: white; // Bootstrap #000000
+$accordion-button-bg: $primary-color;  // Bootstrap #f8f9fa
+$accordion-button-active-bg: #e9ecef;
+$accordion-button-active-color: #000000;
+
+// Cards (BS)
+$card-bg: #ffffff;
+$card-border-color: rgba(0, 0, 0, 0.125);
+$card-border-radius: 0.25rem;
+$card-cap-bg: rgba(0, 0, 0, 0.03);
+
+// Modals (BS)
+$modal-content-bg: #ffffff;
+$modal-content-border-color: rgba(0, 0, 0, 0.2);
+$modal-header-border-color: #e9ecef;
+$modal-footer-border-color: #e9ecef;
+
+// Tooltips & Popovers
+$tooltip-bg: #000000;
+$tooltip-color: #ffffff;
+$popover-bg: #ffffff;
+$popover-border-color: rgba(0, 0, 0, 0.2);
+
+// Dropdowns (BS)
+$dropdown-bg: #ffffff;
+$dropdown-border-color: rgba(0, 0, 0, 0.15);
+$dropdown-link-color: #212529;
+$dropdown-link-hover-color: #16181b;
+$dropdown-link-hover-bg: #f8f9fa;
+
+// Pagination (BS)
+$pagination-bg: #ffffff;
+$pagination-border-color: #dee2e6;
+$pagination-hover-bg: #e9ecef;
+$pagination-active-bg: #007bff;
+$pagination-active-border-color: #007bff;
+
+// Breadcrumbs (BS)
+$breadcrumb-bg: #f8f9fa;
+$breadcrumb-divider-color: $secondary-color; // Bootstrap #6c757d 
+$breadcrumb-active-color: $primary-color; // Bootstrap #6c757d 
+
+// Badges (BS)
+$badge-font-size: 0.75rem;
+$badge-padding-y: 0.25rem;
+$badge-padding-x: 0.5rem;
+$badge-border-radius: 0.25rem;
+
+// Alerts (BS)
+$alert-padding-y: 0.75rem;
+$alert-padding-x: 1.25rem;
+$alert-border-radius: 0.25rem;
+
+// Progress Bars (BS)
+$progress-bg: #e9ecef;
+$progress-bar-bg: $primary-color; // Bootstrap #6c757d 
+$progress-border-radius: 0rem; // Bootstrap 0.25rem
+
+// List Groups (BS)
+$list-group-bg: #ffffff;
+$list-group-border-color: rgba(0, 0, 0, 0.125);
+$list-group-hover-bg: #f8f9fa;
+
+// Spacing (BS)
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+// Grid System (BS)
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+// Z-Index (BS)
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;

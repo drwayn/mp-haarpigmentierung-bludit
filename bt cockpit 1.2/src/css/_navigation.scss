@@ -1,0 +1,126 @@
+.logo{
+    //flex: 0 0 200px !important;
+    max-width: 10rem !important;
+}
+
+
+/*
+//Logo Pico Breakpoint (sm) 
+@media(max-width: 768px){
+
+    .logo-sm{
+      max-width: 20% !important;
+      justify-content:center;
+    }
+  
+  }
+  
+  //Logo Pico Breakpoint (MD) 
+  @media(max-width: 1024px){
+  
+    .logo-md{
+        //max-width: 30% !important;
+        flex: 0 0 400px;
+    }
+  
+  }
+  
+//Logo Pico Breakpoint (XXL) 
+@media(max-width: 2600px){
+  
+    .logo-xxl{
+        //max-width: 35% !important;
+        flex: 0 0 400px;
+    }
+  
+  }
+
+*/
+
+
+
+/*===============Pico überschreiben Navigation======================================*/
+
+
+/*
+nav, nav ul {
+    flex-direction: column !important;
+}
+
+*/
+
+
+
+//Weiter Slim Navigation Style in 
+//src/animation/vendor/slim-navigation.css
+
+nav {
+    ul li{
+        list-style: none  !important;
+    }
+}
+
+
+// Pico überschreiben nur bei nav als class
+.nav ul li {
+    list-style: none !important;
+}
+
+// ============================Slim Naviagation
+
+nav.header__menu.active{
+
+    display:flex;
+    justify-content:center;
+
+    @media (max-width: 768px) {
+        ul.header__list {
+            display:block;
+            display: flex;
+            flex-direction: column;
+        }
+      }
+
+
+}
+
+
+
+
+// ============================Luxbar Naviagation
+
+
+
+// Height Luxbar
+.luxbar-header{
+    //height: 5rem;
+}
+
+// Hintergrund Luxbar
+.luxbar-menu-light, .luxbar-menu-light .dropdown ul{
+    background-color:white;
+}
+
+// Nav links
+.nav ul li a{
+    font-weight: bold;
+    color: blue;
+}
+
+luxbar-item.active{
+
+    background-color: Green;
+    color: white;
+}
+
+
+
+luxbar-item:hover{
+
+    background-color: Green;
+    color: white;
+}
+
+
+
+// ============================Header ...

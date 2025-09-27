@@ -1,0 +1,1732 @@
+@charset "UTF-8";
+/* custom.scss */
+/* --------------------------------------------------
+     FARBSCHEMATEN
+     -------------------------------------------------- */
+:root {
+  /* Primary Color */
+  --pico-primary: #eae0d5 !important;
+  --pico-primary-hover: #0056b3 !important;
+  --pico-primary-focus: #339aff !important;
+  --pico-primary-inverse: #ffffff !important;
+  /* --------------------------------------------------
+     BACKGROUND COLOR
+     -------------------------------------------------- */
+  /* Secondary Color */
+  /* Seite & Fließtext */
+  --pico-background: #ffffff !important;
+  --pico-font-color: #212529 !important;
+  --pico-border-color: #dee2e6 !important;
+}
+:root .bg-primary {
+  background-color: var(--pico-primary);
+}
+:root .bg-secondary {
+  background-color: var(--pico-secondary);
+}
+:root .bg-white {
+  background-color: #ffffff;
+}
+:root .bg-light {
+  background-color: #f1f0f0;
+}
+:root .hover-primary :hover {
+  background-color: var(--pico-primary) !important;
+  color: white !important;
+}
+:root .hover-secondary :hover {
+  background-color: var(--pico-secondary);
+  color: white;
+}
+:root .hover-light :hover {
+  background-color: var(--pico-light);
+  color: var(--pico-primary);
+}
+:root :root {
+  --pico-secondary: #242424 !important;
+  /* Hintergrundfarbe für sekundäre Buttons */
+  --pico-secondary-hover: #545b62 !important;
+  /* Farbe im Hover-Zustand */
+  --pico-secondary-focus: rgba(108, 117, 125, 0.5) !important;
+  /* Fokus-Farbe */
+  --pico-secondary-inverse: #ffffff !important;
+  /* Textfarbe */
+}
+
+/* Secondary Color */
+:root {
+  --pico-white: #ffffff !important;
+  /* Hintergrundfarbe für sekundäre Buttons */
+}
+
+/* --------------------------------------------------
+   TYPOGRAPHIE
+   -------------------------------------------------- */
+:root {
+  /* Basis-Schriftarten */
+  --pico-font-family: "Inter", sans-serif !important;
+  --pico-font-family-sans-serif: "Helvetica Neue", Arial, sans-serif !important;
+  --pico-font-family-monospace: "Courier New", monospace !important;
+  /* Grundlegende Typografie */
+  --pico-font-size: 1rem !important;
+  --pico-line-height: 1.6 !important;
+  --pico-font-weight: 400 !important;
+  --pico-text-underline-offset: 0.1em !important;
+  --pico-typography-spacing-vertical: 1.8rem !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: var(--pico-primary);
+}
+
+.text-secondary {
+  color: var(--pico-secondary);
+}
+
+/* --------------------------------------------------
+     SONSTIGES / ALLGEMEINE EINSTELLUNGEN
+     -------------------------------------------------- */
+:root {
+  /* Rundungen & Übergänge */
+  --pico-border-radius: 0.25rem !important;
+  --pico-transition: all 0.3s ease !important;
+  --pico-button-border-width: 2px;
+  /* Rahmenbreite */
+  --pico-button-border-color: var(--pico-primary);
+  /* Rahmenfarbe */
+  /* Schatteneffekte (z. B. für Gruppenelemente) */
+  --pico-group-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
+  --pico-group-box-shadow-focus-with-input: 0 0 0.75rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --------------------------------------------------
+     SPACING & LAYOUT
+     -------------------------------------------------- */
+:root {
+  /* Block- & Grid-Abstände */
+  --pico-block-spacing-vertical: 1.5rem !important;
+  --pico-block-spacing-horizontal: 1rem !important;
+  --pico-grid-column-gap: 1.5rem !important;
+  --pico-grid-row-gap: 1.5rem !important;
+  /* Formular-Abstände */
+  --pico-form-element-spacing-vertical: 1rem !important;
+  --pico-form-element-spacing-horizontal: 0.5rem !important;
+  /* Button abstände */
+}
+:root :root {
+  --pico-button-padding-vertical: 0.75rem;
+  /* Vertikaler Innenabstand */
+  --pico-button-padding-horizontal: 1.5rem;
+  /* Horizontaler Innenabstand */
+  --pico-button-font-size: 1rem;
+  /* Schriftgröße */
+}
+
+/* --------------------------------------------------
+     FORMULARE & INTERAKTIVE ELEMENTE
+     -------------------------------------------------- */
+:root {
+  /* Formulare und Eingabefelder */
+  --pico-form-element-active-border-color: #80bdff !important;
+  --pico-form-element-focus-color: #80bdff !important;
+  /* Switch/Toggles */
+  --pico-switch-color: #28a745 !important;
+  --pico-switch-checked-background-color: #28a745 !important;
+}
+
+/* --------------------------------------------------
+     Border für Button & Components
+     -------------------------------------------------- */
+/* --------------------------------------------------
+     OPTIONAL: DUNKELMODE-ANPASSUNGEN
+     -------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pico-background: #121212 !important;
+    --pico-font-color: #e0e0e0 !important;
+    --pico-border-color: #444 !important;
+    --pico-primary: #0d6efd !important;
+  }
+}
+/* --------------------------------------------------
+     BREADCRUMP
+     -------------------------------------------------- */
+/* custom.scss */
+/* --------------------------------------------------
+     FARBSCHEMATEN
+     -------------------------------------------------- */
+:root {
+  /* Primary Color */
+  --pico-primary: #eae0d5 !important;
+  --pico-primary-hover: #0056b3 !important;
+  --pico-primary-focus: #339aff !important;
+  --pico-primary-inverse: #ffffff !important;
+  /* --------------------------------------------------
+     BACKGROUND COLOR
+     -------------------------------------------------- */
+  /* Secondary Color */
+  /* Seite & Fließtext */
+  --pico-background: #ffffff !important;
+  --pico-font-color: #212529 !important;
+  --pico-border-color: #dee2e6 !important;
+}
+:root .bg-primary {
+  background-color: var(--pico-primary);
+}
+:root .bg-secondary {
+  background-color: var(--pico-secondary);
+}
+:root .bg-white {
+  background-color: #ffffff;
+}
+:root .bg-light {
+  background-color: #f1f0f0;
+}
+:root .hover-primary :hover {
+  background-color: var(--pico-primary) !important;
+  color: white !important;
+}
+:root .hover-secondary :hover {
+  background-color: var(--pico-secondary);
+  color: white;
+}
+:root .hover-light :hover {
+  background-color: var(--pico-light);
+  color: var(--pico-primary);
+}
+:root :root {
+  --pico-secondary: #242424 !important;
+  /* Hintergrundfarbe für sekundäre Buttons */
+  --pico-secondary-hover: #545b62 !important;
+  /* Farbe im Hover-Zustand */
+  --pico-secondary-focus: rgba(108, 117, 125, 0.5) !important;
+  /* Fokus-Farbe */
+  --pico-secondary-inverse: #ffffff !important;
+  /* Textfarbe */
+}
+
+/* Secondary Color */
+:root {
+  --pico-white: #ffffff !important;
+  /* Hintergrundfarbe für sekundäre Buttons */
+}
+
+/* --------------------------------------------------
+   TYPOGRAPHIE
+   -------------------------------------------------- */
+:root {
+  /* Basis-Schriftarten */
+  --pico-font-family: "Inter", sans-serif !important;
+  --pico-font-family-sans-serif: "Helvetica Neue", Arial, sans-serif !important;
+  --pico-font-family-monospace: "Courier New", monospace !important;
+  /* Grundlegende Typografie */
+  --pico-font-size: 1rem !important;
+  --pico-line-height: 1.6 !important;
+  --pico-font-weight: 400 !important;
+  --pico-text-underline-offset: 0.1em !important;
+  --pico-typography-spacing-vertical: 1.8rem !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: var(--pico-primary);
+}
+
+.text-secondary {
+  color: var(--pico-secondary);
+}
+
+/* --------------------------------------------------
+     SONSTIGES / ALLGEMEINE EINSTELLUNGEN
+     -------------------------------------------------- */
+:root {
+  /* Rundungen & Übergänge */
+  --pico-border-radius: 0.25rem !important;
+  --pico-transition: all 0.3s ease !important;
+  --pico-button-border-width: 2px;
+  /* Rahmenbreite */
+  --pico-button-border-color: var(--pico-primary);
+  /* Rahmenfarbe */
+  /* Schatteneffekte (z. B. für Gruppenelemente) */
+  --pico-group-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
+  --pico-group-box-shadow-focus-with-input: 0 0 0.75rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --------------------------------------------------
+     SPACING & LAYOUT
+     -------------------------------------------------- */
+:root {
+  /* Block- & Grid-Abstände */
+  --pico-block-spacing-vertical: 1.5rem !important;
+  --pico-block-spacing-horizontal: 1rem !important;
+  --pico-grid-column-gap: 1.5rem !important;
+  --pico-grid-row-gap: 1.5rem !important;
+  /* Formular-Abstände */
+  --pico-form-element-spacing-vertical: 1rem !important;
+  --pico-form-element-spacing-horizontal: 0.5rem !important;
+  /* Button abstände */
+}
+:root :root {
+  --pico-button-padding-vertical: 0.75rem;
+  /* Vertikaler Innenabstand */
+  --pico-button-padding-horizontal: 1.5rem;
+  /* Horizontaler Innenabstand */
+  --pico-button-font-size: 1rem;
+  /* Schriftgröße */
+}
+
+/* --------------------------------------------------
+     FORMULARE & INTERAKTIVE ELEMENTE
+     -------------------------------------------------- */
+:root {
+  /* Formulare und Eingabefelder */
+  --pico-form-element-active-border-color: #80bdff !important;
+  --pico-form-element-focus-color: #80bdff !important;
+  /* Switch/Toggles */
+  --pico-switch-color: #28a745 !important;
+  --pico-switch-checked-background-color: #28a745 !important;
+}
+
+/* --------------------------------------------------
+     Border für Button & Components
+     -------------------------------------------------- */
+/* --------------------------------------------------
+     OPTIONAL: DUNKELMODE-ANPASSUNGEN
+     -------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pico-background: #121212 !important;
+    --pico-font-color: #e0e0e0 !important;
+    --pico-border-color: #444 !important;
+    --pico-primary: #0d6efd !important;
+  }
+}
+/* --------------------------------------------------
+     BREADCRUMP
+     -------------------------------------------------- */
+button {
+  border-radius: 4px;
+}
+
+img {
+  border-radius: 0px;
+}
+
+.card {
+  border-radius: 0px;
+}
+
+i {
+  padding: 8px;
+  margin-right: 0.5rem;
+}
+
+/*==========CARD=============*/
+.card h4 {
+  margin-top: 1.5rem;
+}
+.card p {
+  margin-bottom: 1rem;
+}
+
+/*=====================HERO======================================*/
+.hero-full {
+  height: 100svh;
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3f2d;
+  background-image: url(http://picsum.photos/id/699/1280/720);
+  background-size: cover;
+  background-position: 47% 76%;
+}
+
+/*==================PAGE HEADER ==================================*/
+.page-header {
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    margin-top: 4.4rem;
+  }
+}
+/*================Breadcrumb========================================*/
+.breadcrumb a {
+  font-size: 12px !important;
+}
+
+/*===============Fixed Icons======================================*/
+.icons {
+  margin: 2px;
+  position: fixed;
+  top: 40%;
+  right: 0%;
+  left: 96%;
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important;
+  z-index: 1;
+}
+
+.icons a {
+  flex-direction: none;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  padding: 4px 12px;
+  font-size: 22px;
+  font-family: "oswald" san-serif;
+  text-align: left;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.icons a:hover {
+  transform: translate(0px, 0px);
+}
+
+.icons a:hover span {
+  transform: rotate(360deg);
+}
+
+.icons a span {
+  background-color: white;
+  margin-right: 25px;
+  height: 40px;
+  width: 40px;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.icons a {
+  text-transform: uppercase;
+}
+
+.facebook {
+  background-color: #2c80d3;
+  color: #fff;
+}
+
+.youtube {
+  background-color: #fa0910;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #53c5ff;
+  color: #fff;
+}
+
+.linkedin {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.WhatsApp {
+  background-color: green;
+  color: #fff;
+}
+
+.fixed-mail {
+  background-color: var(--pico-primary);
+  color: #fff;
+}
+
+.fixed-phone {
+  background-color: var(--pico-primary);
+  color: #fff;
+}
+
+.input-group {
+  border-collapse: separate;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+.input-group > div {
+  display: table-cell;
+}
+
+.input-group > div:first-child {
+  width: 100%;
+}
+
+.input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.button-input {
+  color: #fff;
+  background-color: #0b0b0b;
+  border: 0;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.simple-btn-toggle {
+  background-color: rgba(46, 82, 102, 0);
+  border: 1px rgb(206, 206, 206) solid;
+}
+.simple-btn-toggle i {
+  color: grey;
+  font-size: 24px;
+}
+
+.magictime {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+.animate__animated {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+.widget-four li {
+  list-style-type: none;
+}
+
+.widget-five li {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .footer ul {
+    flex-direction: column;
+  }
+}
+
+.shop-hero-1 {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shop-hero-1 .shop-hero-1-content h2,
+.shop-hero-1 .shop-hero-1-content p,
+.shop-hero-1 .shop-hero-1-content span {
+  text-align: center;
+}
+
+.shop-hero-1-start {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-items: end;
+  padding: 1.5rem 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shop-hero-1-start .shop-hero-1-content-start h2,
+.shop-hero-1-start .shop-hero-1-content-start p {
+  text-align: start;
+}
+
+.shop-hero-2 {
+  height: 100vh;
+  width: auto;
+}
+
+.product-four-simple img {
+  height: 500px;
+  weight: auto;
+}
+
+.product-card-body-simple {
+  padding: 1.5rem 2rem;
+}
+.product-card-body-simple h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 20px;
+}
+.product-card-body-simple i {
+  border: solid 1px black;
+  border-radius: 50%;
+}
+
+.shop-card-category-simple {
+  padding-bottom: 1rem;
+}
+
+.product-card-price-simple {
+  color: var(-pico-primary);
+}
+
+.shop-category-1-col {
+  height: 300px;
+  width: auto;
+  padding: 3rem;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop-category-1-col p {
+  font-size: 12px;
+}
+.shop-category-1-col h4 {
+  font-size: 2rem;
+}
+
+.shop-category-2-col {
+  height: 500px;
+  width: auto;
+  padding: 3rem;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop-category-2-col p {
+  font-size: 12px;
+}
+.shop-category-2-col h4 {
+  font-size: 2rem;
+}
+
+.shop-category-2-col-full {
+  height: 800px;
+  width: auto;
+  padding: 3rem;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop-category-2-col-full p {
+  font-size: 12px;
+}
+.shop-category-2-col-full h4 {
+  font-size: 2rem;
+}
+
+.shop-category-3 img {
+  height: 600px;
+  width: 100%;
+}
+
+.shop-cta {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop-widget-1-col {
+  height: 500px;
+  width: auto;
+  padding: 3rem;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop-widget-1-col p {
+  font-size: 12px;
+}
+.shop-widget-1-col h4 {
+  font-size: 2rem;
+}
+
+.shop-widget-2-col {
+  height: 420px;
+  width: auto;
+  padding: 3rem;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop-widget-2-col p {
+  font-size: 12px;
+}
+.shop-widget-2-col h4 {
+  font-size: 2rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* Funktioniert für Block-Elemente */
+}
+
+.vh-100 {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.vh-75 {
+  width: 100%;
+  min-height: 75dvh;
+}
+
+.vh-50 {
+  width: 100%;
+  min-height: 50dvh;
+}
+
+.vh-25 {
+  width: 100%;
+  min-height: 25dvh;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.shadow-1 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.shadow-2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.shadow-3 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.shadow-4 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.shadow-5 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.shadow-6 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .d-xs-none {
+    display: none;
+  }
+  .d-xs-flex {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+}
+@media (max-width: 1280px) {
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+}
+@media (max-width: 1563px) {
+  .d-xl-none {
+    display: none;
+  }
+  .d-xl-flex {
+    display: flex;
+  }
+}
+@media (max-width: 1920px) {
+  .d-xxl-none {
+    display: none;
+  }
+  .d-xxl-flex {
+    display: flex;
+  }
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.circle-8 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 8px;
+  height: 8px;
+}
+
+.circle-16 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+}
+
+.circle-24 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.circle-32 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+}
+
+.circle-40 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.circle-48 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+}
+
+.circle-56 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+}
+
+.circle-64 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+}
+
+.circle-72 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 72px;
+  height: 72px;
+}
+
+.circle-80 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.circle-128 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 128px;
+  height: 128px;
+}
+
+.circle-256 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 256px;
+  height: 256px;
+}
+
+.circle-512 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 512px;
+  height: 512px;
+}
+
+.circle-1024 {
+  border-radius: 50% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  object-fit: cover;
+  width: 1024px;
+  height: 1024px;
+}
+
+.rounded-1 {
+  border-radius: 0.5rem;
+}
+
+.rounded-2 {
+  border-radius: 1rem;
+}
+
+.rounded-3 {
+  border-radius: 1.5rem;
+}
+
+.rounded-4 {
+  border-radius: 2rem;
+}
+
+.rounded {
+  border-radius: 1.5rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Keeps the navbar above other content */
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.align-content-center {
+  align-items: center;
+}
+
+.align-content-start {
+  align-items: start;
+}
+
+.align-content-end {
+  align-items: end;
+}
+
+@media (max-width: 768px) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
+  .order-4 {
+    order: 4;
+  }
+  .order-5 {
+    order: 5;
+  }
+  .order-6 {
+    order: 6;
+  }
+}
+.p-1 {
+  padding: 1em;
+}
+
+.p-2 {
+  padding: 1.5em;
+}
+
+.p-3 {
+  padding: 2em;
+}
+
+.p-4 {
+  padding: 2.5em;
+}
+
+.p-5 {
+  padding: 3em;
+}
+
+.py-1 {
+  padding: 1em 0 1em 0;
+}
+
+.py-2 {
+  padding: 1.5em 0 1.5em 0;
+}
+
+.py-3 {
+  padding: 2em 0 2em 0;
+}
+
+.py-4 {
+  padding: 2.5em 0 2.5em 0;
+}
+
+.py-5 {
+  padding: 3em 0 3em 0;
+}
+
+.px-1 {
+  padding: 0 1em 0 1em;
+}
+
+.px-2 {
+  padding: 0 1.5em 0 1.5em;
+}
+
+.px-3 {
+  padding: 0 2em 0 2em;
+}
+
+.px-4 {
+  padding: 0 2.5em 0 2.5em;
+}
+
+.px-5 {
+  padding: 0 3em 0 3em;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-2 {
+  padding-top: 1.5em;
+}
+
+.pt-3 {
+  padding-top: 2em;
+}
+
+.pt-4 {
+  padding-top: 2.5em;
+}
+
+.pt-5 {
+  padding-top: 3em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-2 {
+  padding-bottom: 1.5em;
+}
+
+.pb-3 {
+  padding-bottom: 2em;
+}
+
+.pb-4 {
+  padding-bottom: 2.5em;
+}
+
+.pb-5 {
+  padding-bottom: 3em;
+}
+
+.ps-1 {
+  padding-left: 1em;
+}
+
+.ps-2 {
+  padding-left: 1.5em;
+}
+
+.ps-3 {
+  padding-left: 2em;
+}
+
+.ps-4 {
+  padding-left: 2.5em;
+}
+
+.ps-5 {
+  padding-left: 3em;
+}
+
+.pe-1 {
+  padding-right: 1em;
+}
+
+.pe-2 {
+  padding-right: 1.5em;
+}
+
+.pe-3 {
+  padding-right: 2em;
+}
+
+.pe-4 {
+  padding-right: 2.5em;
+}
+
+.pe-5 {
+  padding-right: 3em;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.m-2 {
+  margin: 1.5em;
+}
+
+.m-3 {
+  margin: 2em;
+}
+
+.m-4 {
+  margin: 2.5em;
+}
+
+.m-5 {
+  margin: 3em;
+}
+
+.my-1 {
+  margin: 1em 0 1em 0;
+}
+
+.my-2 {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.my-3 {
+  margin: 2em 0 2em 0;
+}
+
+.my-4 {
+  margin: 2.5em 0 2.5em 0;
+}
+
+.my-5 {
+  margin: 3em 0 3em 0;
+}
+
+.mx-1 {
+  margin: 0 1em 0 1em;
+}
+
+.mx-2 {
+  margin: 0 1.5em 0 1.5em;
+}
+
+.mx-3 {
+  margin: 0 2em 0 2em;
+}
+
+.mx-4 {
+  margin: 0 2.5em 0 2.5em;
+}
+
+.mx-5 {
+  margin: 0 3em 0 3em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 2em;
+}
+
+.mt-4 {
+  margin-top: 2.5em;
+}
+
+.mt-5 {
+  margin-top: 3em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 1.5em;
+}
+
+.mb-3 {
+  margin-bottom: 2em;
+}
+
+.mb-4 {
+  margin-bottom: 2.5em;
+}
+
+.mb-5 {
+  margin-bottom: 3em;
+}
+
+.me-1 {
+  margin-right: 1em;
+}
+
+.me-2 {
+  margin-right: 1.5em;
+}
+
+.me-3 {
+  margin-right: 2em;
+}
+
+.me-4 {
+  margin-right: 2.5em;
+}
+
+.me-5 {
+  margin-right: 3em;
+}
+
+.ms-1 {
+  margin-left: 1em;
+}
+
+.ms-2 {
+  margin-left: 1.5em;
+}
+
+.ms-3 {
+  margin-left: 2em;
+}
+
+.ms-4 {
+  margin-left: 2.5em;
+}
+
+.ms-5 {
+  margin-left: 3em;
+}
+
+.w-25 {
+  max-width: 25%;
+}
+
+.w-50 {
+  max-width: 50%;
+}
+
+.w-75 {
+  max-width: 75%;
+}
+
+.w-100 {
+  max-width: 100%;
+}
+
+.h-25 {
+  max-height: 25%;
+}
+
+.h-50 {
+  max-height: 50%;
+}
+
+.h-75 {
+  max-height: 75%;
+}
+
+.h-100 {
+  max-height: 100%;
+}
+
+.gap-1 {
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+
+.gap-2 {
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
+}
+
+.gap-3 {
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+
+.gap-4 {
+  -moz-column-gap: 2.5em;
+       column-gap: 2.5em;
+}
+
+.cardcarousel-navigation-right {
+  display: flex;
+  justify-content: end;
+}
+.cardcarousel-navigation-right i:hover {
+  background-color: var(--pico-primary);
+  color: white;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  color: var(--pico-primary);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--pico-primary);
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiperInn {
+  width: 100%;
+  height: 500px;
+}
+
+.cardCarousel {
+  height: 100%;
+}
+.cardCarousel .swiper-slide {
+  width: 30% !important;
+  height: 100%;
+  margin: 1rem;
+}
+.cardCarousel article {
+  width: 30%;
+}
+
+.swiper-slide .row {
+  flex: 1 1 auto !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; /* Falls nötig, um Abstand gleichmäßig zu verteilen */
+}
+
+.swiper-button-next-j,
+.swiper-button-prev-j {
+  opacity: 1 !important; /* Sicherstellen, dass sie sichtbar sind */
+  pointer-events: auto !important; /* Interaktion aktivieren */
+}
+
+.cardCarousel3 .swiper {
+  height: 600px;
+}
+.cardCarousel3 .swiper-button-next-m,
+.cardCarousel3 .swiper-button-prev-m {
+  color: var(--pico-primary);
+}
+.cardCarousel3 .swiper-slide {
+  text-align: start;
+  padding: 4rem;
+}
+
+/* ==================================SETUP Variablen =====================================================*/
+/* Schriftart definieren */
+@font-face {
+  font-family: "Work Sans";
+  src: url("../src/font/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/font/roboto_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+/* Weise den @Fonts eine Variable */
+/* Farben ändern */
+/* ==================================COMPONENTS: Variablen setzen================================================*/
+/* =================================CODE======================================================== */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--pico-primary);
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px !important;
+  color: var(--pico-secondary);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Work Sans", sans-serif;
+  color: var(--pico-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.caption {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: var(--pico-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: white;
+  color: var(--pico-secondary);
+}
+
+.button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  background-color: var(--pico-primary);
+  font-weight: 700;
+}
+
+.button:hover {
+  color: #000000;
+}
+
+.footer {
+  background-color: var(--pico-primary);
+}
+
+.footer a {
+  color: white;
+}
+
+.topbar {
+  background-color: var(--pico-primary);
+}
+
+.topbar a {
+  color: white;
+}
+
+.nav {
+  background-color: white;
+}
+
+.nav a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--pico-secondary);
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: var(--pico-primary);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  nav {
+    display: block;
+  }
+}
+i .primary {
+  background-color: var(--pico-primary);
+  font-size: 12px;
+  color: white;
+  border-radius: 50%;
+}
+
+i .outline {
+  background-color: white;
+  font-size: 12px;
+  color: var(--pico-primary);
+  border: 1px solid var(--pico-primary);
+  border-radius: 50%;
+}
+
+.logo {
+  max-width: 12rem !important;
+}
+
+.header__list {
+  padding-bottom: 1rem;
+}
+
+/*
+//Logo Pico Breakpoint (sm) 
+@media(max-width: 768px){
+
+    .logo-sm{
+      max-width: 20% !important;
+      justify-content:center;
+    }
+
+
+  }
+
+  //Logo Pico Breakpoint (MD) 
+  @media(max-width: 1024px){
+
+    .logo-md{
+        //max-width: 30% !important;
+        flex: 0 0 400px;
+    }
+
+  }
+
+//Logo Pico Breakpoint (XXL) 
+@media(max-width: 2600px){
+
+    .logo-xxl{
+        //max-width: 35% !important;
+        flex: 0 0 400px;
+    }
+
+  }
+
+*/
+/*===============Pico überschreiben Navigation======================================*/
+/*
+nav, nav ul {
+    flex-direction: column !important;
+}
+
+*/
+nav ul li {
+  list-style: none !important;
+}
+
+.nav ul li {
+  list-style: none !important;
+}
+
+nav.header__menu.active {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  nav.header__menu.active ul.header__list {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.luxbar-menu-light, .luxbar-menu-light .dropdown ul {
+  background-color: white;
+}
+
+.nav ul li a {
+  font-weight: bold;
+  color: blue;
+}
+
+luxbar-item.active {
+  background-color: Green;
+  color: white;
+}
+
+luxbar-item:hover {
+  background-color: Green;
+  color: white;
+}
+
+.bg-primary {
+  background-color: var(--pico-primary);
+}
+
+.sy-container {
+  background-color: red;
+}
+
+.sy-font {
+  color: white;
+}/*# sourceMappingURL=custom.css.map */

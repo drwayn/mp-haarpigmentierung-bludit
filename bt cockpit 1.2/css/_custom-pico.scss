@@ -1,0 +1,226 @@
+/* custom.scss */
+
+
+
+
+
+/* --------------------------------------------------
+     FARBSCHEMATEN
+     -------------------------------------------------- */
+:root {
+  /* Primary Color */
+
+  --pico-primary: #eae0d5 !important; // Primärfarbe z. B. für Buttons und Links
+  --pico-primary-hover: #0056b3 !important; // Farbe im Hover-Zustand
+  --pico-primary-focus: #339aff !important; // Farbe, wenn der Fokus aktiv ist
+  --pico-primary-inverse: #ffffff !important; // Umkehrfarbe (für Text auf primären Flächen)
+
+  /* --------------------------------------------------
+     BACKGROUND COLOR
+     -------------------------------------------------- */
+
+
+  $bg-primary: var(--pico-primary);
+  $bg-secondary: var(--pico-secondary);
+  $bg-light: #f1f0f0;
+  $bg-white: #ffffff;
+
+
+
+
+  .bg-primary {
+    background-color: $bg-primary;
+  }
+
+
+  .bg-secondary {
+    background-color: $bg-secondary;
+
+  }
+
+  .bg-white {
+    background-color: $bg-white;
+  }
+
+  .bg-light {
+    background-color: $bg-light;
+  }
+
+
+  .hover-primary{
+    :hover{
+      background-color: var(--pico-primary) !important;
+      color: white !important;
+    }
+  }
+
+  .hover-secondary{
+    :hover{
+      background-color: var(--pico-secondary);
+      color: white;
+    }
+  }
+
+  .hover-light{
+    :hover{
+      background-color: var(--pico-light);
+      color: var(--pico-primary)
+    }
+  }
+
+
+  /* Secondary Color */
+  :root {
+    --pico-secondary: #242424 !important;
+    /* Hintergrundfarbe für sekundäre Buttons */
+    --pico-secondary-hover: #545b62 !important;
+    /* Farbe im Hover-Zustand */
+    --pico-secondary-focus: rgba(108, 117, 125, 0.5) !important;
+    /* Fokus-Farbe */
+    --pico-secondary-inverse: #ffffff !important;
+    /* Textfarbe */
+  }
+
+
+  /* Seite & Fließtext */
+  --pico-background: #ffffff !important; // Standard-Hintergrundfarbe
+  --pico-font-color: #212529 !important; // Standard-Schriftfarbe
+  --pico-border-color: #dee2e6 !important; // Rahmen-/Trennlinienfarbe
+}
+
+
+
+
+/* Secondary Color */
+:root {
+  --pico-white: #ffffff !important;
+  /* Hintergrundfarbe für sekundäre Buttons */
+}
+
+
+
+/* --------------------------------------------------
+   TYPOGRAPHIE
+   -------------------------------------------------- */
+
+
+:root {
+  /* Basis-Schriftarten */
+  --pico-font-family: 'Inter', sans-serif !important;
+  --pico-font-family-sans-serif: 'Helvetica Neue', Arial, sans-serif !important;
+  --pico-font-family-monospace: 'Courier New', monospace !important;
+
+  /* Grundlegende Typografie */
+  --pico-font-size: 1rem !important; // Basis-Schriftgröße
+  --pico-line-height: 1.6 !important; // Zeilenhöhe
+  --pico-font-weight: 400 !important; // Schriftgewicht
+  --pico-text-underline-offset: 0.1em !important; // Versatz für Unterstreichungen
+  --pico-typography-spacing-vertical: 1.8rem !important; // Vertikaler Abstand zwischen typografischen Elementen
+}
+
+$text-white: white;
+$text-primary: var(--pico-primary);
+$text-secondary: var(--pico-secondary);
+
+.text-white {
+  color: $text-white;
+}
+
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-secondary{
+  color: $text-secondary;
+}
+/* --------------------------------------------------
+     SONSTIGES / ALLGEMEINE EINSTELLUNGEN
+     -------------------------------------------------- */
+:root {
+  /* Rundungen & Übergänge */
+  --pico-border-radius: 0.25rem !important; // Rundungen der Ecken (Buttons, Formularen, etc.)
+  --pico-transition: all 0.3s ease !important; // Übergangszeit für Animationen und Hover-Effekte
+
+  //button 
+  --pico-button-border-width: 2px;
+  /* Rahmenbreite */
+  --pico-button-border-color: var(--pico-primary);
+  /* Rahmenfarbe */
+
+  /* Schatteneffekte (z. B. für Gruppenelemente) */
+  --pico-group-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
+  --pico-group-box-shadow-focus-with-input: 0 0 0.75rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* --------------------------------------------------
+     SPACING & LAYOUT
+     -------------------------------------------------- */
+:root {
+  /* Block- & Grid-Abstände */
+  --pico-block-spacing-vertical: 1.5rem !important; // Abstand zwischen Blockelementen (vertikal)
+  --pico-block-spacing-horizontal: 1rem !important; // Abstand zwischen Blockelementen (horizontal, falls genutzt)
+
+  --pico-grid-column-gap: 1.5rem !important; // Spaltenabstand im Grid
+  --pico-grid-row-gap: 1.5rem !important; // Zeilenabstand im Grid
+
+  /* Formular-Abstände */
+  --pico-form-element-spacing-vertical: 1rem !important; // Vertikaler Abstand zwischen Formularelementen
+  --pico-form-element-spacing-horizontal: 0.5rem !important; // Horizontaler Abstand in Formularen
+
+  /* Button abstände */
+  :root {
+    --pico-button-padding-vertical: 0.75rem;
+    /* Vertikaler Innenabstand */
+    --pico-button-padding-horizontal: 1.5rem;
+    /* Horizontaler Innenabstand */
+    --pico-button-font-size: 1rem;
+    /* Schriftgröße */
+  }
+
+}
+
+/* --------------------------------------------------
+     FORMULARE & INTERAKTIVE ELEMENTE
+     -------------------------------------------------- */
+:root {
+  /* Formulare und Eingabefelder */
+  --pico-form-element-active-border-color: #80bdff !important; // Rahmenfarbe, wenn ein Element aktiv ist
+  --pico-form-element-focus-color: #80bdff !important; // Farbe beim Fokussieren
+
+  /* Switch/Toggles */
+  --pico-switch-color: #28a745 !important; // Standard-Switch-Farbe
+  --pico-switch-checked-background-color: #28a745 !important; // Hintergrundfarbe, wenn der Switch aktiviert ist
+}
+
+
+
+
+
+/* --------------------------------------------------
+     Border für Button & Components
+     -------------------------------------------------- */
+
+$rounded: 0px; //componets
+$rounded-button: 4px; //button
+$rounded-img: 0px; // image
+
+
+
+
+/* --------------------------------------------------
+     OPTIONAL: DUNKELMODE-ANPASSUNGEN
+     -------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pico-background: #121212 !important;
+    --pico-font-color: #e0e0e0 !important;
+    --pico-border-color: #444 !important;
+    --pico-primary: #0d6efd !important;
+  }
+}
+
+/* --------------------------------------------------
+     BREADCRUMP
+     -------------------------------------------------- */

@@ -1,0 +1,31 @@
+
+//=====================Boilerplatte===============////
+
+@import 'custom-pico';
+@import 'theme';
+@import 'theme-shop';
+@import 'spacing';
+@import 'custom-swiper';
+@import 'font';
+@import 'navigation';
+
+
+//=====================Theme===============////
+
+.bg-primary{
+  background-color:var(--pico-primary);
+}
+
+
+
+
+.sy-container{
+
+  background-color: red;
+}
+
+
+.sy-font{
+  color: white;
+}
+

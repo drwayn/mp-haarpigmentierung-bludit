@@ -1,0 +1,22 @@
+/*Import Animation and CSS*/
+
+
+
+@import url("pico.min.css");     /* Pico css Classles*/
+@import url("swiper-bundle.min.css");          /* Animation on Scrolling*/
+@import url("luxbar.css");          /* Animation on Scrolling*/
+@import url("aos.css");          /* Animation on Scrolling*/
+@import url("flexboxgrid.min.css"); /*Flexbox*/
+@import url("hover-min.css");  /* Button Animation*/
+@import url("magic.min.css");  /* Magic Animation (advanced)*/
+@import url("animate.min.css"); /* Standrt Animation */
+@import url("slim-navigation.css"); /*Silder/ Caroussel*/
+
+@import url("fullpage.min.css");
+@import url("images-compare.css"); /*Slider Vergleich Bild (Vorher/Nacher)*/
+@import url("yamm.min.css");   /* Bootstrap Mega Menu navigation*/
+@import url("superfish.css"); /*JS Menu Dropdown navigation*/
+@import url("selectize.default.css"); /* Im Input wo Pills mit x nebeneinander sind (Multiselect Input) */
+@import url("selectize.bootstrap5.css"); /* Selective für Bootstrap 5 */
+@import url("selectize.bootstrap4.css"); /* Selective für Bootstrap 4 */
+

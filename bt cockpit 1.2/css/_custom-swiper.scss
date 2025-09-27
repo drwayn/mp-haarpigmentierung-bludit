@@ -1,0 +1,127 @@
+
+// ------ Custom Navigation
+
+.cardcarousel-navigation-right{
+
+  //hover
+  i:hover{
+    background-color: var(--pico-primary);
+    color: white;
+  }
+
+  display:flex;
+  justify-content: end;
+
+}
+
+
+
+// ------ Next/ Prev Button (Original Swiper)
+.swiper-button-next, .swiper-button-prev{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  color: var(--pico-primary);
+}
+
+
+// ------ Active Pagination
+.swiper-pagination-bullet-active{
+  background-color: var(--pico-primary);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  // ------Swiper in Colum
+  .swiperInn{
+    width: 100%;
+    height: 500px;
+  }
+
+
+   // -----Swiper Card Carousel
+
+
+   .cardcarousel-navigation{
+
+   }
+
+   .cardCarousel{
+    height: 100%;
+
+    .swiper-slide{
+      width: 30% !important;
+      height: 100%;
+      margin: 1rem;
+    }
+
+    article{
+      width: 30%;
+    }
+   }
+
+
+// -----cardCarousel2
+
+   .swiper-slide{
+
+    .row{
+      flex: 1 1 auto !important;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between; /* Falls nötig, um Abstand gleichmäßig zu verteilen */
+    }
+
+   }
+
+.swiper-button-next-j,
+.swiper-button-prev-j {
+    opacity: 1 !important; /* Sicherstellen, dass sie sichtbar sind */
+    pointer-events: auto !important; /* Interaktion aktivieren */
+}
+
+
+//---cardCarousel3
+
+.cardCarousel3{
+
+  .swiper{
+
+      height:600px;
+  }
+
+  .swiper-button-next-m,
+  .swiper-button-prev-m {
+    color: var(--pico-primary);
+  }
+
+  .swiper-slide{
+    text-align: start;
+    padding: 4rem;
+  }
+
+}
+
+

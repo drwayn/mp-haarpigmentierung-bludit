@@ -1,0 +1,238 @@
+
+@import 'custom-pico';
+
+$icon-primary-color: #CFB7A2;
+
+
+//import variable custom-pico.css
+button{
+    border-radius: $rounded-button;
+}
+
+img{
+    border-radius: $rounded-img;
+}
+
+.card{
+    border-radius: $rounded;
+}
+
+
+i{
+    padding: 8px; 
+    margin-right: 0.5rem;
+}
+
+
+/*==========CARD=============*/
+
+.card{
+
+    h4{
+        margin-top: 1.5rem;
+    }
+
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+/*=====================HERO======================================*/
+ 
+.hero-full {
+  height: 100svh;
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3f2d;
+  background-image: url(http://picsum.photos/id/699/1280/720);
+  background-size: cover;
+  background-position: 47% 76%;
+}
+  
+
+/*================Breadcrumb========================================*/
+
+.breadcrumb{
+
+    a{
+        font-size:12px !important;
+
+    }
+}
+
+/*===============Fixed Icons======================================*/
+
+.icons {
+          margin:2px;
+          position: fixed;
+          top:  40%;
+          right: 0%;
+          left: 96%;
+          width: 48px;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent !important;
+          z-index: 1;
+
+      }
+      .icons a{
+          flex-direction: none;
+          text-decoration: uppercase;
+          padding:4px 12px;
+          font-size:22px;
+          font-family:'oswald'san-serif;
+          text-align: left;
+          border-radius: 4px; 
+          //transform: translate(180px, 0px); 
+          //transition: all 0.5s;
+          margin-top: 16px;
+
+
+      }.icons a:hover { 
+          transform: translate(0px, 0px); }.icons a:hover span{ transform: rotate(360deg); }
+      .icons a span {
+          background-color: white;
+          margin-right:25px;
+          height: 40px;
+          width: 40px;
+          color: black;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          transition: all 0.5s;
+      } .icons a{
+          text-transform:uppercase;
+        
+      }
+      .facebook{
+          background-color: #2c80d3;
+          color: #fff;
+          
+      }
+      .youtube{
+          background-color: #fa0910;
+          color: #fff;
+      }.twitter{
+          background-color: #53c5ff;
+          color: #fff;
+      }.linkedin{
+          background-color: #007bb5;
+          color: #fff;
+      }.WhatsApp{
+          background-color: green;
+          color: #fff;
+      }
+        .fixed-mail{
+            background-color: var(--pico-primary);
+            color: #fff;
+        }
+        .fixed-phone{
+            background-color: var(--pico-primary);
+            color: #fff;
+        }
+
+//=====Input Group=====================
+
+.input-group {
+    border-collapse: separate;
+    display: table;
+    position: relative;
+    width:100%;
+}
+  
+
+.input-group>div {
+    display: table-cell;
+}
+
+.input-group>div:first-child {
+    width: 100%;
+} 
+.input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    font-size: .875rem;
+    line-height: 1.5;
+
+}
+
+.button-input {
+    color: #fff;
+    background-color: #0b0b0b;
+    border: 0;
+    padding: .375rem .75rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+//===== Simple Navigation - Toogle Button   
+  .simple-btn-toggle{
+    background-color: #2e526600;
+    border: 1px rgb(206, 206, 206) solid;
+
+    i{
+        color: grey;
+        font-size: 24px;
+    }
+  }
+
+
+
+  // Animation stop/aktiv bei scroll mit js(animation-play-state)
+  .magictime {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+  }
+
+  .animate__animated {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+  }
+  
+
+
+
+
+  //===============================Footer=============================================
+
+
+  //---------------Footer Pico Four
+.widget-four{
+    
+    li{
+        list-style-type: none;
+    }
+}
+
+
+.widget-five{
+    
+    li{
+        list-style-type: none;
+    }
+
+}
+
+
+.footer{
+
+  @media(max-width: 768px){
+
+    ul{
+      flex-direction: column;
+    }
+
+}
+
+}
