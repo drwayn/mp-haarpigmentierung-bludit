@@ -27,7 +27,7 @@
 
     </section>
 
-<h1>Guthub Test war erfolgreich</h1>
+<h1>Guthub Test war erfolgreich mit Push/ Pull</h1>
 
 
 
