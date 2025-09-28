@@ -19,17 +19,22 @@
       <nav class="header__menu">
 
 		<!-- Begin Menu -->
+
+		<!-----Static pages
 		<ul class="header__list">
 			<li class=" <?php echo (($url->whereAmI()=='home')?'active':'') ?>">
 				<a class="header__link" href="<?php echo $site->url(); ?>">Stories</a>
 			</li>
 
-			<!-- Static pages -->
+			
 			<?php foreach ($staticContent as $staticPage): ?>
 			<li class=" <?php echo (($url->slug()==$staticPage->slug())?'active':'') ?>">
 				<a class="header__link" href="<?php echo $staticPage->permalink(); ?>"><?php echo $staticPage->title(); ?></a>
 			</li>
 			<?php endforeach ?>
+			-->
+
+			<!-- Dynamisches Menu NavX -->
 			<?php getNavx() ;?>
 
 		</ul>
