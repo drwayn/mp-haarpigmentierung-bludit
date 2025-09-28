@@ -20,10 +20,11 @@
 
 		<!-- Begin Menu -->
 
-		<!-----Static pages
+		
 		<ul class="header__list">
+			<!-----Static pages statt Dynamisch
 			<li class=" <?php echo (($url->whereAmI()=='home')?'active':'') ?>">
-				<a class="header__link" href="<?php echo $site->url(); ?>">Stories</a>
+				<a class="header__link" href="<?php echo $site->url(); ?>">Blog</a>
 			</li>
 
 			
@@ -37,7 +38,13 @@
 			<!-- Dynamisches Menu NavX -->
 			<?php getNavx() ;?>
 
-			<!---Button------>
+			<!---Blog einfügen------>
+			<li class=" <?php echo (($url->whereAmI()=='home')?'active':'') ?>">
+				<a class="header__link" href="<?php echo $site->url(); ?>">Blog</a>
+			</li>
+
+			<!-----CTA Button------>
+			<a href="#"><button class="btn-primary btn btn-sm">Termin buchen</button></a>
 
 
 		</ul>
