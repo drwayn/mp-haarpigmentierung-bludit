@@ -30,6 +30,8 @@
 				<a class="header__link" href="<?php echo $staticPage->permalink(); ?>"><?php echo $staticPage->title(); ?></a>
 			</li>
 			<?php endforeach ?>
+			<?php getNavx() ;?>
+
 		</ul>
 		<!-- End Menu -->
       </nav>
