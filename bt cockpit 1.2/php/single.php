@@ -12,9 +12,12 @@
                 <small><span class="text-secondary"><?php echo $page->custom('figure'); ?></span></small>
                 <?php endif ?>
                 <h1 class="fw-bold text-primary pt-1 pb-1 text-center"><?php echo $page->title(); ?></h1>
-                <small><span>Author: <img src="<?php echo ($page->user('profilePicture')?$page->user('profilePicture'):Theme::src('img/noimage.png')) ?>" alt="mdo" width="45" height="45" class="rounded-circle">&nbsp; <?php echo $page->user('nickname'); ?></span><span>Veröffentlicht am: </i>&nbsp; <?php echo $page->date(); ?></span><span>Kategorie: </i>&nbsp; <?php echo $page->category() ?></span></small>
-            </div>
+                <div class="justify-content-center">
+                    <small><span>Author: <img src="<?php echo ($page->user('profilePicture')?$page->user('profilePicture'):Theme::src('img/noimage.png')) ?>" alt="mdo" width="45" height="45" class="rounded-circle">&nbsp; <?php echo $page->user('nickname'); ?></span><span>Veröffentlicht am: </i>&nbsp; <?php echo $page->date(); ?></span><span>Kategorie: </i>&nbsp; <?php echo $page->category() ?></span></small>
+                </div>
 
+            </div>
+                
             
             <div class="col-sm-3 py-5 mx-auto">
                 

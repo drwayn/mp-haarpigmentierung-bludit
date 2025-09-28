@@ -8,7 +8,7 @@
             <button type="submit" method="GET" value="" name=""> Kostenfrei eintragen</button>
         </div>
         
-        <div id="newsletter" class="bg-light p-4">
+        <div id="newsletter" class="bg-light p-4 my-3">
             <h4>Newsletter</h4>
             <p>Trage dich in unserem Newsletter an</p>
             <form id="newsletter-form" action="GET">
