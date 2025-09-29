@@ -27,15 +27,149 @@
     </div>
             
     <!-- Content -->
-            <div class="col-sm-9 container py-5">
-                <p class="text-secondary"><?php echo $page->content(); ?></p>
-                <?php if (!empty($page->tags(true))): ?>
-                <p class="pt-3">
-                    <?php foreach ($page->tags(true) as $tagKey=>$tagName): ?>
-                    <a href="<?php echo DOMAIN_TAGS.$tagKey ?>"><span class="badge rounded-pill bg-warning text-dark"><?php echo $tagName; ?></span></a>
-                    <?php endforeach ?>
-                </p>
-                <?php endif; ?>
+            <div class="container-fluid">
+
+                <section class="py-5">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="py-3">
+                                <h2>Das ist ein Header</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aliquam laboriosam odit ullam distinctio commodi quibusdam ad architecto voluptas vitae asperiores repudiandae dolore, non tenetur, ipsum in esse vero quasi.</p>
+                                <details name="example" >
+                                    <summary>Accordion 1</summary>
+                                    <p>...</p>
+                                    </details>
+
+                                    <hr />
+
+                                    <details name="example">
+                                    <summary>Accordion 2</summary>
+                                    <ul>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ul>
+                                    </details>
+                                <button class="my-2 primary ">HIER KLICKEN →</button>
+                            </div>
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1740482903249-a49246de837d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="py-5 ">
+                    <div class="container">
+                        <div class="grid">
+                            <div class=" order-1 my-1">
+                                <i class="text-center bi bi-check"></i>
+                                <h4 class="text-center">Massgeschneiderte Lösung</h4>
+                            </div>
+                            <div class=" order-2 my-1">
+                                <i class="mx-auto bi bi-check"></i>
+                                <h4 class="text-center">Diskrete Vorabanalyse</h4>
+                            </div>
+                            <div class="order-3 my-1">
+                                <i class="mx-auto bi bi-check"></i>
+                                <h4 class="text-center">Haarpigmentierung im Detail</h4>
+                            </div>
+                            <div class="order-4 my-1">
+                                <i class="mx-auto bi bi-check"></i>
+                                <h4 class="text-center">Haarpigmentierung im Detail</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="py-5 bg-primary">
+                    <div class="container">
+                        <div class="grid align-items-center justify-items-center ">
+                            <div class="">
+                                <h4 class="text-white uppercase">BUCHE JETZT DEINEN DISKRETE VORABANALYSE ÜBER WHATSAPP</h4>
+                                <p class="text-white">Erhalten sie ihre Behandlung um volles Haar zu erhalten. Egal ob sie eine komplette Glatze haben oder nur eine Teilbereich mit der Haarpigmentierung können sie in kürzester Zeit fantastische Ergebnisse erzielen. Der Einsatz</p>
+                            </div>
+                            <div class="">
+                                <a href=""><button class="secondary uppercase">Diskrete Whatsapp Analyse -></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                 
+                <!----Slider------>
+
+
+
+
+
+                
+                <section class="py-4">
+                    <div class="container ">
+                        <div class="w-50 justify-self-center">
+                            <h2 class="text-center">Die lösung <br>
+                            Micro Haarpigmentierung</h2>
+                            <p class="text-center">Die Micro Haar Pigmentierung (auch Kopfhautpigmentierung genannt) ist eine moderne, nicht-invasive Methode, um das Erscheinungsbild voller Haare zurückzugewinnen.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section class="py-5">
+                    <div class="container">
+                        <div class="grid">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1740482903249-a49246de837d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="py-3">
+                                <h2>So funktioniert es </h2>
+                                <p>Mit einer speziellen Technik werden farblich perfekt abgestimmte Pigmente in die Kopfhaut eingebracht. Das erzeugt die optische Illusion von dichterem Haar oder frisch rasierten Haarstoppeln.</p><br>
+                                                                
+                                <details name="example" >
+                                    <summary class="uppercase">Haarpigmentierung im Detail</summary>
+                                    <ul>
+                                        <p>Erhalten sie ihre Behandlung um volles Haar zu erhalten. Egal ob sie eine komplette Glatze haben oder nur eine Teilbereich mit der Haarpigmentierung können sie in kürzester Zeit fantastische Ergebnisse erzielen. Der Einsatz von Haarpigmentierung ist risikolos und hilft </p>
+                                    </ul>
+                                    </details>
+
+                                    <hr />
+
+                                    <details name="example">
+                                    <summary class="uppercase">DIESE METHODE VERWENDEN WIR</summary>
+                                    <ul>
+                                        <p></p>
+                                    </details>
+
+                                                                        <details name="example">
+                                    <summary class="uppercase">SO LÄUFT EINE BEHANDLUNG AB</summary>
+                                    <ul>
+                                        <p></p>
+                                    </ul>
+                                    </details>
+
+                                <button class="my-2 primary ">HIER KLICKEN →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <br>
                  <?php Theme::plugins('pageEnd'); ?>
             </div>
